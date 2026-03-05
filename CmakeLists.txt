@@ -1,0 +1,18 @@
+cmake_minimum_required(VERSION 3.10)
+project(hello-world C)
+
+include_directories(/usr/include)
+
+add_executable(hello-world hello.c)
+add_executable(compare compare.c)
+add_executable(agree agree.c)
+add_executable(cat cat.c)
+add_executable(mario mario.c)
+add_executable(calculator calculator.c)
+
+target_link_libraries(hello-world cs50)
+target_link_libraries(compare cs50)
+target_link_libraries(agree cs50)
+target_link_libraries(cat cs50)
+target_link_libraries(mario cs50)
+target_link_libraries(calculator cs50)
