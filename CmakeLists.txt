@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.10)
-project(hello-world C)
+project(hello-c C)
 
 include_directories(/usr/include)
 
-add_executable(hello-world hello.c)
+add_executable(hello-c hello.c)
 add_executable(compare compare.c)
 add_executable(agree agree.c)
 add_executable(cat cat.c)

@@ -1,3 +1,4 @@
+#include <ctype.h>
 #include <stdio.h>
 #include <string.h>
 
@@ -10,6 +11,8 @@ int main(void)
         fgets(answer, 100, stdin);
     }
     while (answer[0] == '\n');
+
+    answer[0] = toupper(answer[0]);
 
     answer[strcspn(answer, "\n")] = '\0';
 
